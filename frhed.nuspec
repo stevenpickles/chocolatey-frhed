@@ -26,31 +26,50 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>__REPLACE__</version>
+    <version>1.6.0</version>
     <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <!--<owners>__REPLACE_YOUR_NAME__</owners>-->
+    <owners>stevenpickles</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>frhed (Install)</title>
-    <authors>__REPLACE_AUTHORS_OF_SOFTWARE_COMMA_SEPARATED__</authors>
+    <title>frhed</title>
+    <authors>Kimmo Varis</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://_Software_Location_REMOVE_OR_FILL_OUT_</projectUrl>
-    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/frhed.png</iconUrl>-->
-    <!-- <copyright>Year Software Vendor</copyright> -->
+    <projectUrl>http://frhed.sourceforge.net/en/</projectUrl>
+    <iconUrl>https://sourceforge.net/p/frhed/patches/_discuss/thread/b05c2ad1/5779/attachment/Frhed.ico</iconUrl>
+    <copyright>2009</copyright>
     <!-- If there is a license Url available, it is required for the community feed -->
-    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
-    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
-    <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://bitbucket.org/kimmov/frhed/src/default/</projectSourceUrl>
+    <docsUrl>https://sourceforge.net/p/frhed/wiki/Home/</docsUrl>
+    <mailingListUrl>https://sourceforge.net/p/frhed/mailman/</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/frhed/bugs/</bugTrackerUrl>
     <tags>frhed SPACE_SEPARATED</tags>
-    <summary>__REPLACE__</summary>
-    <description>__REPLACE__MarkDown_Okay </description>
-    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+    <summary>Frhed is an binary file editor for Windows. It is small but has many advanced features like ability to load big files partially.</summary>
+    <description>
+        Frhed is an binary file editor for Windows. It is small but has many advanced features like ability to load big files partially.
+        Features:
+            Editable file size limited only by available system memory
+            Load files partially
+            Export as hexdump to file or clipboard
+            Search for any combination of text and binary values
+            Compare files
+    </description>
+    <releaseNotes>
+        Frhed 1.6.0 2009-06-23 (r745)
+          Add ReadMe.txt (r710)
+          Install ReadMe.txt and show it after installing (r710)
+          Add link to ReadMe.txt to start-menu (r710)
+          Manual updates
+          Bugfix: Could not change language when installed from zip (#2808491)
+          New translation:
+          - Dutch (#2805592)
+          Translation updates:
+          - French (#2806325)
+    </releaseNotes>
     <!-- =============================== -->      
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
